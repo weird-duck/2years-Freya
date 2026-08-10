@@ -456,3 +456,40 @@ body:after{
     display:none;
   }
 }
+
+/* =========================================================
+   HONORABLE MENTIONS — keep the contact sheet visible
+   ========================================================= */
+
+.honour {
+  min-height: 120vh;
+}
+
+.honour-grid {
+  position: relative;
+  z-index: 2;
+}
+
+.honour-grid .photo {
+  min-height: 230px !important;
+  height: 230px !important;
+  overflow: hidden;
+}
+
+.honour-grid .photo > img {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+.honour-grid .photo-placeholder {
+  display: block;
+  background: #eee5d6;
+}
+
+/* Don't let the scroll-reveal hide the whole section */
+.honour.reveal {
+  opacity: 1;
+  transform: none;
+}
